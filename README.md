@@ -8,7 +8,7 @@
 
 先修改大部分图片和跳转网页的href和src的绝对地址
 
-使用idea的全局替换
+使用idea的全局替换。
 
 ![image-20200111152612820](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111152612820.png)
 
@@ -22,3 +22,6 @@
 
 我的nginx是docker安装的，/quark/nginx/html映射 的是 docker容器里/etc/nginx/html文件夹，所以必须这么放。
 
+把配套的images下的文件夹上传到服务器/quark/nginx/html/images目录下
+
+![156513253](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111184106372.png)
