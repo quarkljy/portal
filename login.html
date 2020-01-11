@@ -113,7 +113,7 @@
                     .then(resp => {
                         if(resp.status === 200 || resp.status === 204){
                             const url = leyou.getUrlParam("returnUrl");
-                            window.location = url || 'http://106.52.114.205:9999/portal';
+                            window.location = url || 'http://106.52.114.205/portal';
                         }
                     })
                     .catch(() => this.msg = '用户名或密码错误')
