@@ -8,7 +8,7 @@
 
 先修改大部分图片和跳转网页的href和src的绝对地址
 
-使用idea的全局替换。
+使用idea的全局替换。。
 
 ![image-20200111152612820](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111152612820.png)
 
