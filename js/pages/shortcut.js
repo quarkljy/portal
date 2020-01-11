@@ -52,7 +52,7 @@ const shortcut = {
     },
     methods: {
         gotoLogin() {
-            window.location = "http://106.52.114.205:9999/login.html?returnUrl=" + window.location;
+            window.location = "http://106.52.114.205:9999/portal/login.html?returnUrl=" + window.location;
         }
     }
 }
