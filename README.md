@@ -10,14 +10,15 @@
 
 使用idea的全局替换
 
-![image-20200111142844602](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111142844602.png)
+![image-20200111152612820](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111152612820.png)
 
 修改后台服务的api地址，在common.js 
 
 ![image-20200111143509000](https://leyou-oss-quark.oss-cn-shenzhen.aliyuncs.com/image-20200111143509000.png)
 
-将文件夹下的上传到服务器的
+将电脑本地的portal文件夹下的上传到服务器的/quark/nginx/html/portal文件夹下
 
-/quark/nginx/html/portal-web文件夹下
+
 
 我的nginx是docker安装的，/quark/nginx/html映射 的是 docker容器里/etc/nginx/html文件夹，所以必须这么放。
+
