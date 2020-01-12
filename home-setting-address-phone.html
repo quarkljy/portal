@@ -13,13 +13,13 @@
 </head>
 
 <body>
-   
+
    	<!--页面顶部白条条，由js动态加载-->
 	<script type="text/javascript" src="plugins/jquery/jquery.min.js"></script>
 	<div class="nav-bottom"></div>
     <script type="text/javascript">$(".nav-bottom").load("top.html");</script>
 
-<script type="text/javascript" src="js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/jquery/jquery.min.js"></script>
 <script type="text/javascript">
 $(function(){
 	$("#service").hover(function(){
@@ -35,9 +35,9 @@ $(function(){
 
 })
 </script>
-<script type="text/javascript" src="js/plugins/jquery.easing/jquery.easing.min.js"></script>
-<script type="text/javascript" src="js/plugins/sui/sui.min.js"></script>
-<script type="text/javascript" src="js/widget/nav.js"></script>
+<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/sui/sui.min.js"></script>
+<script type="text/javascript"  src="http://106.52.114.205/portal/js/widget/nav.js"></script>
 <script type="text/javascript" src="plugins/jquery.validate/jquery.validate.js"></script>
 <script>
         $(function(){
@@ -46,9 +46,9 @@ $(function(){
             submitHandler: function() {
                 //验证通过后 的js代码写在这里
             }
-        })		
         })
-    
+        })
+
         //下面是一些常用的验证规则扩展
 
         /*-------------验证插件配置 懒人建站http://www.51xuediannao.com/-------------*/
@@ -65,7 +65,7 @@ $(function(){
         });
 
         /*-------------扩展验证规则使用-------------*/
-        //邮箱 
+        //邮箱
         jQuery.validator.addMethod("mail", function (value, element) {
         var mail = /^[a-z0-9._%-]+@([a-z0-9-]+\.)+[a-z]{2,4}$/;
         return this.optional(element) || (mail.test(value));
@@ -77,41 +77,41 @@ $(function(){
         return this.optional(element) || (phone.test(value));
         }, "电话格式如：0371-68787027");
 
-        //区号验证规则  
+        //区号验证规则
         jQuery.validator.addMethod("ac", function (value, element) {
         var ac = /^0\d{2,3}$/;
         return this.optional(element) || (ac.test(value));
         }, "区号如：010或0371");
 
-        //无区号电话验证规则  
+        //无区号电话验证规则
         jQuery.validator.addMethod("noactel", function (value, element) {
         var noactel = /^\d{7,8}$/;
         return this.optional(element) || (noactel.test(value));
         }, "电话格式如：68787027");
 
-        //手机验证规则  
+        //手机验证规则
         jQuery.validator.addMethod("mobile", function (value, element) {
         var mobile = /^1[3|4|5|7|8]\d{9}$/;
         return this.optional(element) || (mobile.test(value));
         }, "手机格式不对");
 
-        //邮箱或手机验证规则  
+        //邮箱或手机验证规则
         jQuery.validator.addMethod("mm", function (value, element) {
         var mm = /^[a-z0-9._%-]+@([a-z0-9-]+\.)+[a-z]{2,4}$|^1[3|4|5|7|8]\d{9}$/;
         return this.optional(element) || (mm.test(value));
         }, "格式不对");
 
-        //电话或手机验证规则  
+        //电话或手机验证规则
         jQuery.validator.addMethod("tm", function (value, element) {
         var tm=/(^1[3|4|5|7|8]\d{9}$)|(^\d{3,4}-\d{7,8}$)|(^\d{7,8}$)|(^\d{3,4}-\d{7,8}-\d{1,4}$)|(^\d{7,8}-\d{1,4}$)/;
         return this.optional(element) || (tm.test(value));
         }, "格式不对");
 
         //年龄
-        jQuery.validator.addMethod("age", function(value, element) {   
+        jQuery.validator.addMethod("age", function(value, element) {
         var age = /^(?:[1-9][0-9]?|1[01][0-9]|120)$/;
         return this.optional(element) || (age.test(value));
-        }, "不能超过120岁"); 
+        }, "不能超过120岁");
         ///// 20-60   /^([2-5]\d)|60$/
 
         //传真
@@ -274,7 +274,7 @@ $(function(){
                                         <label for="inputPassword" class="control-label">手机号：</label>
                                         <div class="controls">
                                             <input name="inputphone" type="text" id="inputphone" placeholder="请输入新手机号">
-                                        </div>                            
+                                        </div>
                                     </div>
                                      <div class="control-group">
                                         <label for="inputcode" class="control-label">验证码：</label>
