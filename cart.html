@@ -301,7 +301,7 @@
                         if (this.user) {
                             // 重新登录
                             console.log("未登录或已过期");
-                            window.location.href = "http://106.52.114.205/portal/login.html?returnUrl=" + window.location.href;
+                            window.location.href = "login.html?returnUrl=" + window.location.href;
                         }
                         reject(error);
                     })
@@ -439,13 +439,13 @@
 </script>
 <!-- 底部栏位 -->
 <!--页面底部，由js动态加载-->
-<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/jquery/jquery.min.js"></script>
+<script type="text/javascript"  src="js/plugins/jquery/jquery.min.js"></script>
 <div class="clearfix footer"></div>
 <script type="text/javascript">$(".footer").load("foot.html");</script>
 <!--页面底部END-->
-<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/jquery.easing/jquery.easing.min.js"></script>
-<script type="text/javascript"  src="http://106.52.114.205/portal/js/plugins/sui/sui.min.js"></script>
-<script type="text/javascript"  src="http://106.52.114.205/portal/js/widget/nav.js"></script>
+<script type="text/javascript"  src="js/plugins/jquery.easing/jquery.easing.min.js"></script>
+<script type="text/javascript"  src="js/plugins/sui/sui.min.js"></script>
+<script type="text/javascript"  src="js/widget/nav.js"></script>
 
 </body>
 
