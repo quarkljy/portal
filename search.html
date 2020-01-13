@@ -206,7 +206,7 @@
                             <li class="yui3-u-1-5" v-for="goods in goodsList" :key="goods.id">
                                 <div class="list-wrap">
                                     <div class="p-img">
-                                        <a :href="'/item/'+goods.id+'.html'" target="_blank">
+                                        <a :href="'item/'+goods.id+'.html'" target="_blank">
                                             <!--展示图片有bug，什么时候出现bug？当一个sku有多个图片时-->
                                             <!--老师的代码是images，实际后台传的是image-->
                                             <img :src="goods.selected.images" /></a>
@@ -223,7 +223,7 @@
                                             <i>{{ly.formatPrice(goods.selected.price)}}</i>
                                         </strong>
                                     </div>
-                                    <div class="attr"><a :href="'/portal/item/' + goods.id + '.html'" target="_blank">
+                                    <div class="attr"><a :href="'item/' + goods.id + '.html'" target="_blank">
                                             <em>{{goods.selected.title.length<20 ? goods.selected.title
                                         :goods.selected.title.substring(0,20)+"..."}}</em></a>
                                     </div>

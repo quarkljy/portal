@@ -103,7 +103,7 @@
                     // 判断订单状态
                     if (this.order.orderStatus.status !== 1) {
                         alert("订单已支付！");
-                        location.href = "/paysuccess.html?orderId=" + id;
+                        location.href = "paysuccess.html?orderId=" + id;
                     }
                     // 生成付款链接
                     ly.http.get("/order-service/order/url/" + id).then(resp => {
@@ -126,7 +126,7 @@
                                     // 付款成功
                                     clearInterval(taskId);
                                     // 跳转到付款成功页
-                                    location.href = "/paysuccess.html?orderId=" + id;
+                                    location.href = "paysuccess.html?orderId=" + id;
                                 } else if (i === 2) {
                                     // 付款失败
                                     clearInterval(taskId);
